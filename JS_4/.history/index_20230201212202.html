@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- link index.css -->
+        <link rel="stylesheet" href="./CSS/index.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Các bài tập về câu lệnh if else</h1>
+            <h3 class="alert alert-warning">
+                <p>Ví dụ 1: Viết chương trình cho phép người dùng nhập</p>
+
+                <p>- Nhập vào số tiền lương 1 giờ (ví dụ: 10)</p>
+
+                <p>- Nhập vào số giờ làm việc</p>
+
+                <p>
+                    Khi người dùng bấm vào nút tính tiền thì in ra kết quả theo
+                    công thức như sau:
+                </p>
+
+                <p>Nếu làm từ nhỏ hơn bằng 40 giờ thì tiền công theo hệ số 1</p>
+
+                <p>
+                    Nếu làm lớn hơn 40 giờ thì tiền công sẽ tính theo công thức
+                    (40 giờ đầu hệ số, giờ thứ 41 trở đi sẽ tính theo hệ số 1.5)
+                </p>
+            </h3>
+
+            <div class="from-group-row">
+                <div class="col-4">
+                    <p>Nhập vào số tiền lương 1h</p>
+                    <input type="" id="tienLuong1h" class="from-control" />
+                </div>
+
+                <div class="col-4">
+                    <p>Nhập vào số giờ</p>
+                    <input type="text" id="soGioLam" class="form-control" />
+                </div>
+
+                <div class="col-4">
+                    <button
+                        id="btnTinhTien"
+                        class="btn btn-success d-inline-block p-4"
+                        onclick="tinhTienLuong()"
+                    >
+                        Tính tiền
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mt-2">
+            <p class="alert alert-success">
+                Tổng tiền lương: <span id="tongLuong">0 đồng</span>
+            </p>
+        </div>
+
+        <br />
+        <br />
+
+        <h3 class="alert alert-morning">
+            Bài tập 2: Viết chương trình cho phép người dùng nhập vào một thông
+            tin mặt hàng như sau:
+
+            <p>- Nhập vào tên mặt hàng: ví dụ Áo Thun</p>
+
+            <p>- Nhập vào số lượng: ví dụ 10</p>
+
+            <p>- Nhập vào đơn giá nhập: ví dụ 50k /cái</p>
+
+            Xây dựng chức năng tính tiền sựa trên công thức sau:
+            <br />
+            Mua ít hơn 50 cái : tính đúng giá
+            <br />
+            Mua 50 - 100 cái : thì giảm giá 8% trên giá trị sản phẩm
+            <br />
+            Mua trên 100 cái thì giảm giá 12% trên giá trị sản phẩm
+
+            <div class="form-group-row">
+                <div class="col-3">
+                    <p>Nhập vào tên sp</p>
+                    <input
+                        type="text"
+                        name=""
+                        id="tenSanPham"
+                        class="form-control"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <p>Số lượng nhập</p>
+                    <input
+                        type="text"
+                        name=""
+                        id="soLuongNhap"
+                        class="form-control"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <p>Đơn giá nhập</p>
+                    <input
+                        type="text"
+                        name=""
+                        id="soLuongNhap"
+                        class="form-control"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <button id="btnTinhTienHang" class="btn btn-success">
+                        Tính tiền
+                    </button>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="alert alert-success">
+                <h3>Tổng tiền nhập hàng : <span id="tongTienLuong"></span></h3>
+            </div>
+        </h3>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- link index.js -->
+        <script src="./JS/index.js"></script>
+    </body>
+</html>
