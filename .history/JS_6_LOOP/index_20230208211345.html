@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS_6_LOOP</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body style="margin: 0 auto; padding: 0">
+        <div class="container">
+            <h1 class="text-danger text-center bg-info" style="margin: 0 auto">
+                LOOP - VÒNG LẶP
+            </h1>
+
+            <!-- BT1: Bài tập in ra số div tương ứng -->
+            <h3 class="my-2">
+                Bài 1 : Viết chương trình cho phép người dùng nhập vào 1 số - in
+                ra số div hello cybersoft tương ứng
+            </h3>
+
+            <div class="form-group">
+                <p>Nhập vào số div</p>
+                <input
+                    type="text"
+                    name=""
+                    class="form-control w-25"
+                    id="so-div"
+                />
+
+                <button class="btn btn-dark my-2" id="btn-in-div">
+                    In div
+                </button>
+            </div>
+
+            <div class="alert alert-danger mt-2 mb-5" id="ket-qua-bai-1"></div>
+
+            <!-- BT2: Tính giai thừa -->
+            <h3>
+                Bài tập 2: Viết chương trình cho người dùng nhập vào 1 số, tính
+                giai thừa số đó
+            </h3>
+
+            <div class="alert alert-warning">
+                Ví dụ: Người dùng nhập vào số 5
+                <p class="alert alert-danger">5! = 4 * 3 * 2 * 1; =>> 120</p>
+            </div>
+
+            <div class="form-group">
+                <input
+                    type="text"
+                    id="so-giai-thua"
+                    class="form-control w-50"
+                />
+                <br />
+                <button class="my-2 btn btn-success" id="btn-tinh-giai-thua">
+                    Tính giai thừa
+                </button>
+            </div>
+
+            <p class="alert alert-success my-2">
+                Kết quả : <span id="ket-qua-bai-2"></span>
+            </p>
+
+            <!-- BT3: Tính tổng các số hạng -->
+            <h3 class="mt-5">
+                Bài tập 3: Tính tổng các số hạng từ 1 đến số người dùng nhập vào
+            </h3>
+
+            <div class="alert alert-info">
+                Ví dụ người dùng nhập vào số 5:
+                <p>
+                    Kết quả = 5 + 4 + 3 + 2 + 1;
+                    <br />
+                    Hoặc Kết quả = 1 + 2 + 3 + 4 + 5 ;
+                </p>
+            </div>
+
+            <div class="form-group">
+                <p>Nhập vào số hạng</p>
+                <input
+                    type="text"
+                    class="form-control w-50 d-inline-block"
+                    id="soHang"
+                />
+                <button class="my-2 btn btn-dark" id="btnTinhTong">
+                    Tính tổng
+                </button>
+            </div>
+
+            <div class="alert alert-success">
+                Kết quả: <span id="ket-qua-bai-3"></span>
+            </div>
+
+            <!-- BT 4: IN RA SỐ SAO -->
+            <h3 class="mt-5">
+                Bài tập 4: Cho phép người dùng nhập vào 1 số in ra số sao
+                <i class="fa fa-star"></i> tương ứng
+            </h3>
+
+            <div class="alert alert-warning">
+                Ví dụ người dùng nhập vào 5
+                <br />
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+
+            <div class="form-group">
+                <p>Nhập vào số sao:</p>
+                <input type="text" class="form-control w-50" id="soSao" />
+
+                <button class="btn btn-dark" id="btn btn-success">
+                    In sao
+                </button>
+            </div>
+
+            <div class="alert alert-warning">
+                Kết quả: <span id="ket-qua-bai-4"></span>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./JS_6/index.js"></script>
+    </body>
+</html>
